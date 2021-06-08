@@ -1,0 +1,617 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    vertical-align: middle;
+}
+
+ul {
+    list-style: none;
+}
+
+.mx-30 {
+    margin: 0px 30px;
+}
+
+/* common css end */
+.full-wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.full-wrapper .conteiner {
+    width: 960px;
+    /* height: 100vh; */
+}
+
+.banner-bg {
+    width: 100%;
+    background: url(../images/banner.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+    z-index: 1;
+}
+
+
+.banner-bg::before {
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background: rgba(0, 0, 0, 0.6);
+    z-index: -1;
+}
+
+.banner-bg .banner-conteiner {
+    width: 960px;
+    /* height: 100vh; */
+}
+
+nav {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav-fix{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 99999;
+    background: rgba(0, 0, 0, 0.801);
+    animation: smooth 0.3s linear;
+}
+@keyframes smooth{
+    0%{
+        top: -100%;
+    }
+    100%{
+        top: 0;
+    }
+}
+
+.banner-bg .banner-conteiner nav .logo {
+    width: 130px;
+    padding-top: 30px;
+}
+
+.banner-bg .banner-conteiner nav .logo img {
+    width: 100%;
+}
+
+.banner-bg .banner-conteiner nav .menu-list {
+    width: 830px;
+    display: flex;
+    justify-content: flex-end;
+    padding-top: 35px;
+}
+
+.banner-bg .banner-conteiner nav .menu-list ul {
+    width: 45%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.banner-bg .banner-conteiner nav .menu-list ul li {
+    position: relative;
+    overflow: hidden;
+}
+
+
+nav .menu-list ul li::before {
+    content: '';
+    width: 45px;
+    height: 3px;
+    background: #d43f11;
+    position: absolute;
+    left: -45px;
+    top: 20px;
+    transition: all linear 0.3s;
+    -o-transition: all linear 0.3s;
+    -moz-transition: all linear 0.3s;
+    -ms-transition: all linear 0.3s;
+    -webkit-transition: all linear 0.3s;
+}
+
+nav .menu-list ul li:hover::before {
+    left: 0;
+}
+
+nav .menu-list ul li a {
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 13px;
+}
+
+.banner-text {
+    text-align: center;
+}
+
+.banner-text h1 {
+    color: #fff;
+    font-size: 45px;
+    padding-top: 185px;
+}
+
+.banner-text p {
+    color: #e4e3e3;
+    font-size: 14px;
+    padding-top: 35px;
+    padding-bottom: 35px;
+}
+
+.banner-text .button {
+    padding-bottom: 240px;
+}
+
+.banner-text a {
+    color: #fff;
+    border: 1px solid #fff;
+    padding: 15px 30px;
+    text-transform: uppercase;
+    position: relative;
+    transition: all linear 0.3s;
+}
+
+.banner-text a:hover {
+    background: #d43f11;
+    border: 1px solid #d43f11;
+}
+
+.banner-text a::before {
+    content: '';
+    width: 30px;
+    height: 2px;
+    background: #ffffff;
+    position: absolute;
+    left: -15px;
+    top: 50%;
+    transition: all linear 0.3s;
+}
+
+.banner-text a:hover::before {
+    background: #d43f11;
+}
+
+.banner-text a::after {
+    content: '';
+    width: 30px;
+    height: 2px;
+    background: #ffffff;
+    position: absolute;
+    right: -15px;
+    top: 50%;
+    transition: all linear 0.3s;
+}
+
+.banner-text a:hover::after {
+    background: #d43f11;
+}
+
+/* banner-bg end */
+.course-conteiner {
+    margin-top: 95px;
+    width: 960px;
+    /* height: 100vh; */
+}
+
+.course-conteiner section {
+    width: 960px;
+}
+
+.course-conteiner section .header-text {
+    text-align: center;
+    text-transform: capitalize;
+}
+
+.course-conteiner section .header-text h1 {
+    font-size: 35px;
+}
+
+.course-conteiner section .header-text P {
+    color: #686868;
+    font-size: 14px;
+    padding-top: 20px;
+}
+
+.course-conteiner section .course-box {
+    display: flex;
+}
+
+.course-conteiner section .course-box .box {
+    width: 300px;
+    text-align: center;
+    background: #ffffff;
+    margin-top: 65px;
+    transition: all linear 0.3s;
+}
+
+.course-conteiner section .course-box .box:hover {
+    box-shadow: 0px 0px 5px 1px rgb(0, 0, 0, 0.3);
+    background: #f7efef;
+}
+
+.course-conteiner section .course-box h3 {
+    padding: 30px 0px;
+}
+
+.course-conteiner section .course-box p {
+    padding: 0px 20px 30px;
+}
+
+/* course part end */
+
+.campus-bg {
+    margin-top: 95px;
+}
+
+.campus-conteiner {
+    width: 960px;
+}
+
+.campus-conteiner section {
+    width: 100%;
+}
+
+.campus-conteiner section .campus-header {
+    text-align: center;
+    text-transform: capitalize;
+}
+
+.campus-conteiner section .campus-header h3 {
+    font-size: 35px;
+}
+
+.campus-conteiner section .campus-header p {
+    color: #686868;
+    font-size: 14px;
+    padding-top: 20px;
+}
+
+.campus-conteiner section .campus {
+    display: flex;
+    margin-top: 65px;
+}
+
+.campus-conteiner section .campus .campus-box {
+    width: 300px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.campus-conteiner section .campus .campus-box .slider {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background: rgba(207, 14, 7, 0.6);
+    left: 0;
+    top: -100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all linear 0.3s;
+}
+
+.campus-conteiner section .campus .campus-box:hover .slider {
+    top: 0;
+}
+
+.campus-conteiner section .campus .campus-box .slider p {
+    color: #fff;
+    font-size: 30px;
+    text-transform: capitalize;
+}
+
+.campus-conteiner section .campus .campus-box img {
+    width: 100%;
+}
+
+/* campus part end */
+
+.facility-conteiner {
+    width: 960px;
+    margin-top: 95px;
+}
+
+.facility-conteiner section {
+    width: 100%;
+}
+
+.facility-conteiner section .facility-header {
+    text-align: center;
+    text-transform: capitalize;
+}
+
+.facility-conteiner section .facility-header h3 {
+    font-size: 35px;
+}
+
+.facility-conteiner section .facility-header p {
+    color: #686868;
+    font-size: 14px;
+    padding-top: 20px;
+}
+
+.facility-conteiner section .facility {
+    display: flex;
+    margin-top: 65px;
+}
+
+.facility-conteiner section .facility .facility-box {
+    width: 300px;
+    transition: all linear 0.3s;
+}
+
+.facility-conteiner section .facility .facility-box:hover {
+    width: 300px;
+    margin-top: -30px;
+}
+
+.facility-conteiner section .facility .facility-box img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.facility-conteiner section .facility .facility-box h3 {
+    margin-top: 15px;
+    text-transform: capitalize;
+}
+
+.facility-conteiner section .facility .facility-box p {
+    margin-top: 15px;
+    text-transform: capitalize;
+    font-size: 14px;
+    color: #686868;
+}
+
+
+/* facility part end */
+
+.feedback-conteiner {
+    width: 960px;
+    margin-top: 95px;
+}
+
+.feedback-conteiner section {
+    width: 100%;
+}
+
+.feedback-conteiner section .feedback-header {
+    text-align: center;
+    text-transform: capitalize;
+}
+
+.feedback-conteiner section .feedback-header h3 {
+    font-size: 35px;
+}
+
+.feedback-conteiner section .feedback-header p {
+    color: #686868;
+    font-size: 14px;
+    padding-top: 20px;
+}
+
+.feedback-conteiner section .feedback {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 65px;
+}
+
+.feedback-conteiner section .feedback .box {
+    width: 465px;
+    display: flex;
+    background: #f7efef;
+}
+
+.feedback-conteiner section .feedback .box .box-img {
+    width: 50px;
+    height: 50px;
+    margin-left: 25px;
+    margin-top: 20px;
+}
+
+.feedback-conteiner section .feedback .box .box-img img {
+    width: 100%;
+    border-radius: 50%;
+}
+
+.feedback-conteiner section .feedback .box .box-text {
+    width: 360px;
+    margin-left: 25px;
+    margin-top: 20px;
+}
+
+.feedback-conteiner section .feedback .box .box-text h3 {
+    text-transform: capitalize;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.feedback-conteiner section .feedback .box .box-text p {
+    color: #686868;
+}
+
+.feedback-conteiner section .feedback .box .box-text ul {
+    width: 150px;
+    display: flex;
+}
+
+.feedback-conteiner section .feedback .box .box-text ul li {
+    margin-left: 5px;
+    padding-bottom: 20px;
+}
+
+.feedback-conteiner section .feedback .box .box-text ul li:first-of-type {
+    margin-left: 0;
+}
+
+.feedback-conteiner section .feedback .box .box-text ul li i {
+    color: #d43f11;
+    font-size: 13px;
+}
+
+
+.banner1-bg {
+    margin-top: 95px;
+}
+
+.banner1-bg .banner1-conteiner section {
+    width: 930px;
+    background: url(../images/banner2.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    color: #fff;
+    position: relative;
+    z-index: 1;
+
+}
+
+.banner1-bg .banner1-conteiner section::after {
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background: rgba(0, 0, 0, 0.6);
+    z-index: -1;
+}
+
+.banner1-bg .banner1-conteiner section h3 {
+    font-size: 30px;
+    padding-top: 100px;
+    line-height: 50px;
+    padding-bottom: 45px;
+}
+
+.banner1-bg .banner1-conteiner section .button {
+    padding-bottom: 90px;
+}
+
+.banner1-bg .banner1-conteiner section .button a {
+    color: #fff;
+    border: 1px solid #fff;
+    padding: 15px 30px;
+    text-transform: uppercase;
+    position: relative;
+    transition: all linear 0.3s;
+}
+
+.banner1-bg .banner1-conteiner section .button a:hover {
+    background: #d43f11;
+    border: 1px solid #d43f11;
+}
+
+.banner1-bg .banner1-conteiner section .button a::before {
+    content: '';
+    width: 30px;
+    height: 2px;
+    background: #ffffff;
+    position: absolute;
+    left: -15px;
+    top: 50%;
+    transition: all linear 0.3s;
+}
+
+.banner1-bg .banner1-conteiner section .button a:hover::before {
+    background: #d43f11;
+}
+
+.banner1-bg .banner1-conteiner section .button a::after {
+    content: '';
+    width: 30px;
+    height: 2px;
+    background: #ffffff;
+    position: absolute;
+    right: -15px;
+    top: 50%;
+    transition: all linear 0.3s;
+}
+
+.banner1-bg .banner1-conteiner section .button a:hover::after {
+    background: #d43f11;
+}
+
+/* banner1 part end  */
+
+.end-bg {
+    margin-top: 140px;
+}
+
+.end-bg .end-conteiner {}
+
+.end-bg .end-conteiner .heading-end {
+    text-align: center;
+}
+
+.end-bg .end-conteiner .heading-end h3 {
+    text-transform: uppercase;
+    font-size: 18px;
+}
+
+.end-bg .end-conteiner .heading-end p {
+    color: #686868;
+    padding: 40px 80px 30px;
+    line-height: 23px;
+}
+
+.end-bg .end-conteiner .icon ul {
+    display: flex;
+    justify-content: center;
+
+}
+
+.end-bg .end-conteiner .icon ul li {
+    margin-left: 30px;
+}
+
+.end-bg .end-conteiner .icon ul li:first-of-type {
+    margin-left: 0;
+}
+
+.end-bg .end-conteiner .icon ul li i {
+    color: #d43f11;
+}
+
+.end-bg .end-conteiner .icon p {
+    color: #686868;
+    padding: 30px 0px;
+}
+
+.end-bg .end-conteiner .icon p span i {
+    color: #d43f11;
+    font-size: 13px;
+}
+.back-to-top{
+    color: #fff;
+}
+.back-to-top i{
+    padding: 15px;
+    background: #ca5c5c;
+    border-radius: 50%;
+    position: fixed;
+    right: 30px;
+    bottom: 30px;
+    z-index: 9999;
+    display: none;
+    cursor: pointer;
+}
